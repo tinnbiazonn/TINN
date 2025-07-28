@@ -1,0 +1,240 @@
+body,h1,h2,h3,h4,h5 {
+	font-family: "Poppins", sans-serif
+}
+
+body {
+	font-size:16px;
+}
+
+.w3-row-padding {
+  width: 100%;
+  height: 100%;
+}
+.w3-third img {
+	margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer;
+  height: 10%;
+  width: 50%;
+}
+.w3-third img:hover {
+	opacity:1
+}
+
+ /*SK COUNCILS*/
+  .responsive-table {
+    overflow-x: auto;
+  }
+
+  /* Optional: shrink images slightly on smaller screens */
+  @media screen and (max-width: 600px) {
+    .responsive-table img {
+      width: 60% !important;
+    }
+
+    .responsive-table td {
+      font-size: 14px;
+    }
+  }
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*Photogrid*//
+.body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .grid-container1, .grid-container2, .grid-container3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 80%;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      padding-top: 60px;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .modal-images {
+      position: relative;
+      text-align: center;
+    }
+
+    .modal-images img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    .modal-text {
+      margin-top: 15px;
+    }
+
+    /* Next & Previous Buttons */
+    .modal-nav {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      user-select: none;
+      border-radius: 0 3px 3px 0;
+      background-color: rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .modal-nav:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 0 3px 3px 0;
+    }
