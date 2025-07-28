@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<title>SK OFFICIAL EVENTS</title>
+	<link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+<!-- NAVIGATION-->
+	<div class="w3-top">
+	  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+	    <img src="icon.png" style=" weight:45px; height: 45px;">&nbsp; SK Council Brgy. 662 Zone 71
+	    <!-- Right-sided navbar links. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+	      <a href="main.html" class="w3-bar-item w3-button">Home</a>
+    	  <a href="#" class="w3-bar-item w3-button">Events</a>
+    	  <a href="main.html#about" class="w3-bar-item w3-button">AboutUs</a>
+    	  <a href="main.html#contact" class="w3-bar-item w3-button">Contact</a>
+    	</div>
+  	  </div>
+	</div>
+
+<!-- CONTENTS -->
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+  		<div class="numbertext">1 / 5</div>
+  		<img src="sk.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 5</div>
+	  <img src="sk1.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 5</div>
+	  <img src="sk2.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 5</div>
+	  <img src="sk3.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 5</div>
+	  <img src="sk4.jpg" style="width:100%">
+	</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span>  
+	</div>
+
+<!-- Header -->
+	<div class="w3-main" style="margin-left:50px;margin-right:50px">
+	  <div class="w3-container" style="margin-top:5px" id="showcase">
+    	<h1 class="w3-jumbo w3-center" style="text-shadow:3px 2px 0 #888; color: #4f3222";><b>Sangguniang Kabataan</b></h1>
+    	<h1 class="w3-xxxlarge" style="color:  #d4ac6e;"><b>EVENTS and PROGRAM</b></h1>
+    	<hr style="width:50px;border:5px solid #8b6f47;" class="w3-round">
+  	</div>
+
+<!-- Photo grid (modal) -->
+<div class="grid-container1">
+  		<div class="grid-item" onclick="openModal(0)">
+    		<img src="oath.jpg" alt="OATH">
+    		<h1 class="w3-small w3-center" style="color:black"><b>OATH-TAKING CEREMONY OF NEWLY ELECTED SK OFFICIALS</b></h1>
+		</div>
+  		
+  		<div class="grid-item" onclick="openModal(1)">
+    		<img src="viv.jpg" alt="VIVA">
+    		<h1 class="w3-small w3-center" style="color:black"><b>VIVA PIT SENIOR STO. NIÑO</b></h1>
+  		</div>
+
+		<div class="grid-item" onclick="openModal(2)">
+    		<img src="skc.jpg" alt="SKC">
+    		<h1 class="w3-small w3-center" style="color:black"><b>SPECIAL KUPIDO CONFESSIONS</b></h1>
+  		</div>
+  		
+  		<div class="grid-item" onclick="openModal(3)">
+    		<img src="lung.jpg" alt="LUNG">
+    		<h1 class="w3-small w3-center" style="color:black"><b>WE JUST MADE HISTORY</b></h1>
+  		</div>
+
+  		<div class="grid-item" onclick="openModal(4)">
+    		<img src="droga1.jpg" alt="DROGA">
+    		<h1 class="w3-small w3-center" style="color:black"><b>BUHAY INGATAN, DROGA'Y AYAWAN (BIDA)</b></h1>
+  		</div>
+</div>
+
+<div class="grid-container2">
+  		<div class="grid-item" onclick="openModal(5)">
+    		<img src="fnrn.jpg" alt="FUNRUN">
+    		<h1 class="w3-small w3-center" style="color:black"><b>LINGGO NG KABATAAN 5K FUN RUN: "Tara Takbo Kabtaang Manileño"</b></h1>
+		</div>
+  		
+  		<div class="grid-item" onclick="openModal(6)">
+    		<img src="wee.jpg" alt="HALLOWEEN">
+    		<h1 class="w3-small w3-center" style="color:black"><b>TRICK OR TREATS, HAPPY HALLOWEEN!</b></h1>
+  		</div>
+
+		<div class="grid-item" onclick="openModal(7)">
+    		<img src="sport24.jpg" alt="SPORT">
+    		<h1 class="w3-small w3-center" style="color:black"><b>SUMMER SPORTS LEAGUE 2024</b></h1>
+  		</div>
+  		
+  		<div class="grid-item" onclick="openModal(8)">
+    		<img src="sport25.jpg" alt="SPORTS">
+    		<h1 class="w3-small w3-center" style="color:black"><b>SUMMER SPORTS LEAGUE 2025</b></h1>
+  		</div>
+
+  		<div class="grid-item" onclick="openModal(9)">
+    		<img src="val.jpg" alt="VALENTINES">
+    		<h1 class="w3-small w3-center" style="color:black"><b>VALENTINE'S DAY 2025</b></h1>
+  		</div>
+</div>
+
+
+
+<!-- Modal Viewer -->
+	<div id="newsModal" class="modal">
+  		<div class="modal-content">
+    	<span class="close" onclick="closeModal()">✘</span>
+    	<div class="modal-images">
+    	  <span class="modal-nav prev" onclick="changeImage(-1)">❮</span>
+    	  <img id="modalImg" src="" alt="news photo">
+    	  <span class="modal-nav next" onclick="changeImage(1)">❯</span>
+    	</div>
+    		<p class="modal-text" id="modalText"></p>
+  		</div>
+	</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
