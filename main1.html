@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+	<title>SK OFFICIAL</title>
+	<link rel="icon" type="image/x-icon" href="icon.png">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("1HOCoNBCDaYF3ZBl_"); // Replace with your actual Public Key
+    })();
+  </script>
+</head>
+<body>
+
+<!-- NAVIGATION-->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="icon.png" style=" weight:45px; height: 45px;">&nbsp; SK Council Brgy. 662 Zone 71
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events</a>
+      <a href="#about" class="w3-bar-item w3-button">AboutUs</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Top menu on small screens -->
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="sk0.jpg" alt="boat" style="padding-top:40px; width:100%; min-height:350px; max-height:600px;">
+</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:50px;margin-right:50px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:5px" id="showcase">
+    <h1 class="w3-jumbo" style="text-shadow:3px 2px 0 #888; color: #4f3222";><b>Sangguniang Kabataan</b></h1>
+    <h1 class="w3-xxxlarge" style="color:  #d4ac6e;"><b>ACHIEVEMENTS</b></h1>
+    <hr style="width:50px;border:5px solid #8b6f47;" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+  <div class="w3-third">
+    <img src="ooath.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+
+  <div class="w3-third">
+    <img src="skmt.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+  </div>
+
+  <div class="w3-third">
+    <img src="sknight.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+  </div>
+</div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  
+  <!-- ABOUT US -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #d4ac6e"><b>ABOUT US</b></h1>
+    <hr style="width:50px;border:5px solid #8b6f47" class="w3-round">
+    <p>LAGI'T LAGI PARA SA KABATAAN</p>
+  </div>
+
+
+  <!-- COUNCILS -->
+<div class="w3-container" id="team">
+  <h2><b>SK COUNCILS</b></h2>
+  <table class="w3-table-all w3-centered">
+    <tr>
+      <td>
+        <img src="yuri.jpg" alt="Yuri" style="width:80%"><br>
+        <strong>ROVIC "Yuri" ACUÑA</strong><br>
+        SK CHAIRPERSON
+      </td>
+      <td>
+        <img src="atong.jpg" alt="Jaspher" style="width:80%"><br>
+        <strong>JASPHER IMPERIO</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="loy.jpg" alt="Michael" style="width:80%"><br>
+        <strong>MICHAEL ANGELO PALOMERAS</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="tan.png" alt="Tristan" style="width:80%"><br>
+        <strong>TRISTAN EDCEL D. SERAD</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="balt.jpg" alt="Christian" style="width:80%"><br>
+        <strong>CHRISTIAN "Astrid" A. ENANO</strong><br>
+        SK KAGAWAD
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="tin.jpg" alt="Kristine" style="width:80%"><br>
+        <strong>KRISTINE N. BIAZON</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="vaye.jpg" alt="Valerie" style="width:80%"><br>
+        <strong>VALERIE NALUIS</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="ralph.jpg" alt="Ralph" style="width:80%"><br>
+        <strong>RALPH ELDRIGE P. LO</strong><br>
+        SK KAGAWAD
+      </td>
+      <td>
+        <img src="ritz.jpg" alt="Ritz" style="width:80%"><br>
+        <strong>RITZ ERWELL "Ishiey" P. LO</strong><br>
+        SK SECRETARY
+      </td>
+      <td>
+        <img src="centa.jpg" alt="Vicenta" style="width:80%"><br>
+        <strong>VICENTA TORREGOSA</strong><br>
+        SK TREASURER
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #d4ac6e"><b>CONTACT</b></h1>
+    <hr style="width:50px;border:5px solid #8b6f47" class="w3-round">
+    <p>We love to hear your suggestions and comments! :))</p>
+  
+    <form id="contact-form">
+      <div class="w3-section">
+        <label for="user_name">Name</label>
+        <input class="w3-input w3-border" type="text" name="user_name" id="user_name" placeholder="Your Name" required>
+      </div>
+      <div class="w3-section">
+        <label for="user_email">Email</label>
+        <input class="w3-input w3-border" type="email" name="user_email" id="user_email" placeholder="Your Email" required>
+      </div>
+      <div class="w3-section">
+        <label for="message">Message</label>
+        <textarea class="w3-input w3-border" name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button id="sendButton" type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom w3-camo-tan w3-hover-brown">Send Message</button>
+    </form>
+  </div>
+  
+
+
+<!-- Image of location/map -->
+<img src="tobal.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+  <!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-camo-brown w3-center">
+	FOLLOW US ON OUR SOCIAL MEDIA ACCOUNTS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="w3-button w3-large w3-camo-tan w3-hover-brown" href="https://www.facebook.com/Brgy662Z71SK" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+	<a class="w3-button w3-large w3-camo-tan w3-hover-brown" href="https://mail.google.com/mail/?view=cm&fs=1&to=cristobalsk66271@gmail.com" title="Google" target="_blank"><i class="fa fa-google"></i></a>
+	<a class="w3-button w3-large w3-camo-tan w3-hover-brown" href="https://instagram.com" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+</footer>
+
+<!-- End page content -->
+</div>
+
+
+
+
+<!--CONTACT SCRIPT-->
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Contact form handler
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    emailjs.sendForm("service_nh1p4y6", "template_0wqlsfw", this)
+      .then(function(response) {
+        alert("Message sent successfully!");
+        console.log("SUCCESS", response);
+      }, function(error) {
+        alert("Failed to send message. Error: " + JSON.stringify(error));
+        console.error("FAILED", error);
+      });
+  });
+  </script>
+  
+</body>
+</html>
